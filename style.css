@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar {
+  background-color: #4FB3E8;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #005480 !important;
+}
+
+.nav-link.active,
+.dropdown-item.active {
+  font-weight: bold;
+  color: #007bb5 !important; /* Botswana blue */
+  background-color: #e7f5ff;  /* Light blue background */
+  border-radius: 5px;
+}
+
+
+header {
+  background-image: url(''); /* Optional background */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4FB3E8;
+  color: #000;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00AEEF;
+  color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #4FB3E8;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #0080ff;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Banner Styling */
+.page-banner {
+  background-color: #4FB3E8; /* Botswana blue */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.page-banner.active {
+  height: 200px;
+  padding: 60px 0;
+  opacity: 1;
+}
+
+/* Banner Title */
+.page-banner h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 
+    -4px -4px 10px #1e90ff,  /* top-left: blue */
+     4px  4px 10px #000000;  /* bottom-right: black */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+form h2 {
+  color: #4FB3E8;
+}
+
+.hero-header {
+  background-image: url('https://www.nation.sc/uploads/articles/2019-10/1974_VmrN3wrqx.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  position: relative;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-header .container {
+  z-index: 2;
+  position: relative;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /*subtle dark overlay*/
+  z-index: 1;
+}

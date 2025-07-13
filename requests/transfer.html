@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Institution Transfer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        
+    </head>
+    <body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../images/dtef-logo.png" alt="DTEF Logo" width="40" height="40" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Applications
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../applications/new-student.html">New Student</a></li>
+                                <li><a class="dropdown-item" href="../applications/top-achiever.html">Top Achiever</a></li>
+                                <li><a class="dropdown-item" href="../applications/responsorship.html">Responsorship</a></li>
+                                <li><a class="dropdown-item" href="../applications/progression.html"> Progression</a></li>
+                                <li><a class="dropdown-item" href="../applications/diplomat.html">Diplomat Sponsorship</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="termination.html">Termination</a></li>
+                                <li><a class="dropdown-item" href="change-program.html">Change Program</a></li>
+                                <li><a class="dropdown-item active" href="deferment.html">Deferment</a></li>
+                                <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Notifications
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../notifications/pregnancy.html">Pregnancy</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Animated Banner -->
+        <section class="page-banner" id="pageBanner">
+            <h1>Transfer Request</h1>
+        </section>
+
+        <!-- Page Content -->
+        <main class="container mt-5">
+           <h2 class="mb-4">Request to Transfer Institutions</h2>
+           <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="idNumber" class="form-label">Omang/ Passport Number</label>
+                    <input type="text" class="form-control" id="idNumber" name="idNumber" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="currentInstitution" class="form-label">Current Institution</label>
+                    <input type="text" class="form-control" id="currentInstitution" name="currentInstitution" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="newInstitution" class="form-label">New Institution</label>
+                    <input type="text" class="form-control" id="newInstitution" name="newInstitution" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="reason" class="form-label">Reason for Transfer</label>
+                    <textarea class="form-control" id="reason" name="reason" rows="4" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="supportDoc" class="form-label">Supporting Letter/Approval Document (PDF)</label>
+                    <input type="file" class="form-control" id="supportDoc" name="supportDoc" accept=".pdf" required></textarea>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="confirm" required>
+                    <label class="form-check-label" for="confirm">
+                        I confirm that the information provided is true and complete.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Application</button>   
+            </form>
+        </main>
+
+        <!--  Footer -->
+        <footer class="footer text-center py-3 mt-5">
+            <p>&copy; 2025 Department of Tertiary Education Financing. All rights reserved.</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Animate banner when page loads
+            window.addEventListener("DOMContentLoaded", () => {
+            const banner = document.getElementById("pageBanner");
+            banner.classList.add("active");
+            });
+        </script>
+    </body>
+</html>
